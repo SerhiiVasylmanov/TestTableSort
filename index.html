@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Название товара</th>
+          <th>Количество</th>
+          <th>Стоимость 1 ед.</th>
+          <th id="total">Общая стоимость</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Красный носок</td>
+          <td>
+            <input
+              type="number"
+              id="quantityRedSock"
+              name="quantityRedSock"
+              value="0"
+            />
+          </td>
+          <td>
+            <input
+              type="number"
+              id="priceRedSock"
+              name="priceRedSock"
+              value="3.2"
+            />
+          </td>
+          <td id="totalRedSock"></td>
+        </tr>
+        <tr>
+          <td>Синий носок</td>
+          <td>
+            <input
+              type="number"
+              id="quantityBlueSock"
+              name="quantityBlueSock"
+              value="0"
+            />
+          </td>
+          <td>
+            <input
+              type="number"
+              id="priceBlueSock"
+              name="priceBlueSock"
+              value="4.2"
+            />
+          </td>
+          <td id="totalBlueSock"></td>
+        </tr>
+        <tr>
+          <td>Бесцветный носок</td>
+          <td>
+            <input
+              type="number"
+              id="quantityСolorlessSock"
+              name="quantityСolorlessSock"
+              value="0"
+            />
+          </td>
+          <td>
+            <input
+              type="number"
+              id="priceСolorlessSock"
+              name="priceСolorlessSock"
+              value="55"
+            />
+          </td>
+          <td id="totalСolorlessSock"></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Общая стоимость всех товаров</td>
+          <td id="orderTotal">0</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

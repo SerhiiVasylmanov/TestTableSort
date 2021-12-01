@@ -1,0 +1,70 @@
+body {
+    max-width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.table {
+    height: 40vh;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th {
+    color: white;
+    background: black;
+    padding: 0 5px;
+    font-size: 24px;
+}
+
+.table td,
+.table th {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+th.sorted[data-order="1"],
+th.sorted[data-order="-1"] {
+    position: relative;
+}
+
+th.sorted[data-order="1"]::after,
+th.sorted[data-order="-1"]::after {
+    position: absolute;
+}
+
+th.sorted[data-order="-1"]::after {
+    content: "▼"
+}
+
+th.sorted[data-order="1"]::after {
+    content: "▲"
+}
+#total{
+    cursor: pointer;
+}
+#total:hover {
+    text-decoration: underline;
+}
+
+
+.table tbody tr:hover {
+    background-color: lightblue;
+}
+
+.table tbody tr td input {
+    padding: 5px;
+    width: 50%;
+}
+
+.table tfoot tr {
+    font-weight: bold;
+    color: red;
+}
